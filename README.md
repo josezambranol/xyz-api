@@ -9,7 +9,7 @@ endpoint público ni se usa `permitAll()`. La consola web de H2 está deshabilit
 - Maven 3.9+
 
 ```bash
-mvn clean test
+mvn clean package
 mvn spring-boot:run
 ```
 
