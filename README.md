@@ -3,6 +3,11 @@
 API REST con Spring Boot, Spring Security, Spring Data JPA y H2. No existe ningún
 endpoint público ni se usa `permitAll()`. La consola web de H2 está deshabilitada.
 
+## Integrantes
+
+- Jose Daniel Zambrano Luna
+- Rafael Eduardo Sarmiento Peña
+
 ## Requisitos y ejecución
 
 - Java 21
