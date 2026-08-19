@@ -1,0 +1,24 @@
+# Maven & Build
+target/
+.m2/
+*.jar
+*.war
+
+# Database & Logs
+data/
+*.log
+
+# IDEs & Editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.code-workspace
+.project
+.classpath
+.settings/
+
+# OS Files
+.DS_Store
+Thumbs.db
