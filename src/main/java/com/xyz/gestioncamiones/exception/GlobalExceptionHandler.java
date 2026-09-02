@@ -28,6 +28,11 @@ public class GlobalExceptionHandler {
         return respuesta(HttpStatus.BAD_REQUEST, "La solicitud contiene datos inválidos", request, errores);
     }
 
+    @ExceptionHandler({org.springframework.security.core.AuthenticationException.class})
+    ResponseEntity<ApiError> errorAutenticacion(Exception ex, HttpServletRequest request) {
+        return respuesta(HttpStatus.UNAUTHORIZED, "Credenciales incorrectas o token no válido", request, null);
+    }
+
     private ResponseEntity<ApiError> respuesta(HttpStatus status, String mensaje,
                                                 HttpServletRequest request,
                                                 java.util.Map<String, String> errores) {
